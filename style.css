@@ -1,0 +1,22 @@
+.gradient-box {
+    position: relative;
+    width: 350px; 
+    display: inline-block; 
+}    
+
+.gradient-box::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgb(255, 255, 255) 100%);
+    z-index: 1; 
+}
+
+.gradient-box img {
+    width: 100%;
+    z-index: 2;
+}
+
